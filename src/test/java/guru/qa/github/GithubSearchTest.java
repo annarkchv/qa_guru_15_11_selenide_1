@@ -14,6 +14,6 @@ public class GithubSearchTest {
         $("#wiki-tab").click();
         $(".js-wiki-more-pages-link").click();
         $(".wiki-rightbar").$(withText("SoftAssertions")).click();
-        $("#user-content-3-using-junit5-extend-test-class").should(Condition.exist);
+        $("#user-content-3-using-junit5-extend-test-class").shouldBe(Condition.visible);
     }
 }
